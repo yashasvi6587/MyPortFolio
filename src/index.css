@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background: rgb(17, 17, 61);
+  color: rgb(230, 194, 194);
+  font-family: outfit;
+}
