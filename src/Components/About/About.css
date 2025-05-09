@@ -1,147 +1,80 @@
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  z-index: 0;
+  overflow: hidden;
 }
-.about-title{
-    position: relative;
+
+.animated-bg span {
+  position: absolute;
+  width: 40vmin;
+  height: 40vmin;
+  background: radial-gradient(circle, rgba(0,255,255,0.2), transparent);
+  border-radius: 50%;
+  animation: move 20s linear infinite alternate;
 }
-.about-title h1{
-    padding: 0px 130px;
-    font-size: 80px;
-    font-weight: 600;
+
+.animated-bg span:nth-child(1) {
+  top: 10%;
+  left: 15%;
 }
-.about-title img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+.animated-bg span:nth-child(2) {
+  top: 40%;
+  left: 70%;
+  animation-delay: 5s;
 }
-.about-sections{
-    display: flex;
-    gap: 80px;
+.animated-bg span:nth-child(3) {
+  top: 80%;
+  left: 25%;
+  animation-delay: 10s;
 }
-.about-left img{
-    border-radius: 50%;
+.animated-bg span:nth-child(4) {
+  top: 60%;
+  left: 50%;
+  animation-delay: 15s;
 }
-.about-right{
-    display: flex;
-    gap: 80px;
-    flex-direction: column;
+.animated-bg span:nth-child(5) {
+  top: 20%;
+  left: 80%;
+  animation-delay: 2s;
 }
-.about-para{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 24px;
-    font-weight: 500;
+
+@keyframes move {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-50px) scale(1.2); }
 }
-.about-skills{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.animate-float-glow {
+  animation: floatGlow 6s ease-in-out infinite;
 }
-.about-skill{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    transition: 0.3s;
+
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  }
 }
-.about-skill p{
-    min-width: 150px;
-    font-size: 24px;
-    font-weight: 500;
+
+.animate-fade-in {
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
 }
-.about-skill hr{
-    outline: none;
-    border: none;
-    width: 50%;
-    height: 8px;
-    border-radius: 50px;
-    background: linear-gradient(264deg , orange -5.09% , purple 106.28%);
-}
-.about-achievements{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 80px;
-}
-.about-achievement{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    transition: 0.5s;
-}
-.about-achievement h1{
-    font-size: 60px;
-    font-weight: 700;
-    background: linear-gradient(270deg,orange 50.46%, purple 96.21%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.about-achievement p{
-    font-size: 22px;
-    font-weight: 500;
-}
-.about-skill:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-.about-achievement:hover{
-    transform: scale(1.12);
-    transition: 0.5s;
-}
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
-    }
-    .about-title h1{
-        font-size: 50px;
-        padding: 0;
-    }
-    .about-title img{
-        width: 130px;
-        right: -20px;
-    }
-    .about-sections{
-        flex-direction: column;
-    }
-    .about-left{
-        display:  none;
-    }
-    .about-para{
-        font-size: 18px;
-        line-height: 32px;
-    }
-    .about-skill{
-        gap: 20px;
-        align-items: center;
-    }
-    .about-skill p{
-        font-size: 20px;
-    }
-    .about-skill hr{
-        height: 6px;
-    }
-    .about-achievements{
-        justify-content: space-between;
-    }
-    .about-achievement{
-        gap: 10px;
-    }
-    .about-achievement h1{
-        font-size: 34px;
-        font-weight: 700;
-    }
-    .about-achievement p{
-        text-align: center;
-        font-size: 16px;
-    }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

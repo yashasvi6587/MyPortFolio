@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
 }
@@ -7,4 +7,5 @@ body{
   background: rgb(17, 17, 61);
   color: rgb(230, 194, 194);
   font-family: outfit;
-}
+} */
+@import "tailwindcss";
