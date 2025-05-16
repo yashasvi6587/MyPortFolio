@@ -2,6 +2,7 @@ import React from 'react';
 import mylogo from "../../assets/mylogo.jpg";
 import { FaGithub, FaLinkedin, FaCode, FaEnvelope } from "react-icons/fa";
 import './Footer.css'; // Optional: For animated background
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -51,9 +52,9 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-lg text-gray-400 gap-8 relative z-10">
         <p>@2025 <strong>Yashasvi Sharma</strong>. All Rights Reserved.</p>
-        <a href="/contact" className="hover:text-white transition text-lg">
+        <Link href="/contact" className="hover:text-white transition text-lg">
           Connect With Me
-        </a>
+        </Link>
       </div>
     </footer>
   );
