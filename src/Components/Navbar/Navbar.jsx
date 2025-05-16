@@ -26,11 +26,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white shadow-lg backdrop-blur-lg transform transition-all duration-500 ease-in-out">
       <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-        
+
         {/* Logo with Animation */}
-        <img 
-          src={mylogo} 
-          alt="Logo" 
+        <img
+          src={mylogo}
+          alt="Logo"
           className="w-20 h-20 rounded-full border-4 border-white shadow-xl transform transition-all duration-500 hover:scale-125 hover:rotate-12 hover:shadow-2xl"
         />
 
@@ -71,7 +71,8 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
-          className="fixed top-0 right-[-100%] w-80 h-full bg-black text-white shadow-lg p-8 z-50 flex flex-col items-start gap-6 transition-all duration-500"
+          className="fixed top-0 right-[-100%] w-80 h-full bg-gradient-to-b from-gray-900 via-black to-gray-900
+ text-gray-100 shadow-lg p-8 z-50 flex flex-col items-start gap-6 transition-all duration-500"
         >
           <img
             src={menu_close}
@@ -87,10 +88,11 @@ const Navbar = () => {
                 setMenu(link.to);
                 closeMenu();
               }}
-              className="w-full py-3 px-5 rounded-md text-lg transition hover:bg-blue-600 transform hover:scale-105"
+              className={`w-full py-3 px-5 rounded-md text-lg font-semibold text-white hover:bg-blue-600 hover:text-white transition transform hover:scale-105`}
             >
               {link.label}
             </Link>
+
           ))}
           <Link
             to="/contact"
