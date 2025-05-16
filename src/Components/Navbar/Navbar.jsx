@@ -71,8 +71,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
-          className="fixed top-0 right-[-100%] w-80 h-full bg-gradient-to-b from-gray-900 via-black to-gray-900
- text-gray-100 shadow-lg p-8 z-50 flex flex-col items-start gap-6 transition-all duration-500"
+          className="fixed top-0 right-[-100%] w-80 h-full bg-black text-gray-100 shadow-lg p-8 z-50 flex flex-col items-start gap-6 transition-all duration-500"
         >
           <img
             src={menu_close}
@@ -88,7 +87,7 @@ const Navbar = () => {
                 setMenu(link.to);
                 closeMenu();
               }}
-              className={`w-full py-3 px-5 rounded-md text-lg font-semibold text-white hover:bg-blue-600 hover:text-white transition transform hover:scale-105`}
+              className={`w-full py-3 px-5 rounded-md text-lg bg-black font-semibold text-white hover:bg-blue-600 hover:text-white transition transform hover:scale-105`}
             >
               {link.label}
             </Link>
