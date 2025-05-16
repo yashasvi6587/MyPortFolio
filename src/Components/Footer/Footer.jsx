@@ -52,7 +52,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-lg text-gray-400 gap-8 relative z-10">
         <p>@2025 <strong>Yashasvi Sharma</strong>. All Rights Reserved.</p>
-        <Link href="/contact" className="hover:text-white transition text-lg">
+        <Link to="/contact" className="hover:text-white transition text-lg">
           Connect With Me
         </Link>
       </div>
