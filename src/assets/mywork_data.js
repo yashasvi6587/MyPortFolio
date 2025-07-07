@@ -4,6 +4,7 @@ import project_3 from '../assets/project_3.jpg'
 import project_4 from '../assets/project_4.jpg'
 import project_5 from '../assets/project_5.jpg'
 import project_6 from '../assets/project_6.jpg'
+import project_7 from '../assets/project_7.webp'
 import hospital from "../assets/hospital.png"
 import tour from "../assets/tour.png"
 import youtube from "../assets/youtube.png"
@@ -52,10 +53,23 @@ export const projectimages  = {
     project_4,
     project_5,
     project_6,
+    project_7
     // "Github"
 }
 
 export const projects = [
+    {
+        title:"E - Commerce",
+        image:project_7,
+        desc:"The platform is tailored for biker lifestyle apparel, with a strong emphasis on modern design, performance, and seamless user experience.",
+        tech:"Tech: React.js, Tailwind CSS, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB Atlas, Mongoose, Passport.js, Stripe, Razorpay, Cloudinary, Multer",
+        link1:"https://github.com/yashasvi6587/A-Basic-To-do-List-App",
+        link2:"https://exitt-frontend.vercel.app/",
+        highlight1:"Strong Online Presence & User Experience",
+        highlight2:"Secure Payment Gateways & Efficient Logistics",
+        highlight3:"Customer Experience & Support",
+        
+    },
     {
         title:"Tour & Travel App",
         image:project_1,
@@ -122,6 +136,7 @@ export const projects = [
         highlight2:"State management using React hooks",
         highlight3:"Persistent tasks with LocalStorage",
     },
+    
 ]
 
 // export default mywork_data;

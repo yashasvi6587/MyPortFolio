@@ -5,7 +5,7 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 import './MyWork.css'
 
 const MyWork = () => {
-  const [visible, setVisible] = useState(6)
+  const [visible, setVisible] = useState(7)
 
   const handleShowMore = () => {
     setVisible(projects.length)
@@ -52,9 +52,9 @@ const MyWork = () => {
                 <li>{project.highlight3}</li>
               </ul>
               <div className="flex gap-20 justify-center mt-4">
-                <a href={project.link1} target="_blank" rel="noopener noreferrer">
+                {/* <a href={project.link1} target="_blank" rel="noopener noreferrer">
                   <p className="w-8 h-8 text-xl hover:scale-110 transition" >Github</p>
-                </a>
+                </a> */}
                 <a href={project.link2} target="_blank" rel="noopener noreferrer">
                   <p className="w-8 h-8 text-xl hover:scale-110 transition" >Live</p>
                 </a>
