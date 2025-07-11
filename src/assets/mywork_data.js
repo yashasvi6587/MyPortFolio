@@ -76,7 +76,7 @@ export const projects = [
         desc:"A dynamic travel and tourism website that showcases top destinations, interactive image galleries, and individual tour pages with detailed info. It provides users with an engaging UI and smooth navigation for travel planning.",
         tech:"Tech: HTML5, CSS3, JavaScrript, React, Tailwind CSS, Web3Forms",
         link1:"https://github.com/yashasvi6587/Tour-And-Travel-App",
-        link2:"https://unseentour.netlify.app/",
+        link2:"https://bagpakkers.netlify.app/",
         highlight1:"Visually rich grid layout with hover effects",
         highlight2:"Detailed tour pages dynamically rendered from assets",
         highlight3:"Contact form with real-time email notifications",
